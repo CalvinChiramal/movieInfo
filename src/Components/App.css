@@ -1,0 +1,252 @@
+/* Home.js */
+
+.app {
+  background-color: #282c34;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.movies span {
+    margin: auto;
+    font-weight: bold;
+    color: rgb(161, 15, 15);
+}
+
+.errorMessage {
+    margin: auto;
+    font-weight: bold;
+    color: rgb(161, 15, 15);
+}
+
+/* Header.js */
+
+.app-header {
+    background-color: #282c34;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: cyan;
+    padding: 20px;
+}
+
+.app-header h2 {
+    margin: 0;
+}
+
+/* Movie.js */
+
+.movie {
+    padding: 5px 25px 10px 25px;
+    max-width: 20%;
+    color:red;
+}
+
+.link {
+    color:red;
+    text-decoration: none;
+}
+
+/* Search.js */
+
+.search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search input[type="text"] {
+    border: 1px solid red;
+    background-color: #535353;
+    color:white;
+    cursor: text;
+}
+
+input[type="submit"] {
+    padding: 5px;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    width: 80px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: red;
+    color: #282c34;
+}
+
+.search > input[type="text"] {
+    width: 40%;
+    min-width: 170px;
+}
+
+/* MovieInfo.js */
+
+.loading {
+    background-color: #282c34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: red;
+    font-size: 40px;
+}
+
+.nomovie {
+    background-color: #282c34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: red;
+    font-size: 40px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #282c34;
+}
+
+.titcont {
+    padding: 5px 25px 10px 25px;
+    max-width: 100%;
+    color:white;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.year {
+    
+    font-size: 40px;
+}
+
+.poster {
+    padding: 5px 25px 10px 25px;
+    max-width: 100%;
+    color:white;
+    display: flex;
+    flex-direction: row;
+}
+
+.ratings {
+    max-width: 100%;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.titcont2 {
+    max-width: 100%;
+    color:white;
+}
+
+.rating {
+    margin-top: 50px;
+}
+
+.plot {
+    color: white;
+}
+
+/* Viewport styles */
+
+@media screen and (min-width: 694px) and (max-width: 915px) {
+    /* Movie.js */
+    .movie {
+      max-width: 33%;
+    }
+    
+    /* MovieInfo.js */
+    .title {
+        font-size: 40px;
+    }
+    .year {
+        font-size: 35px;
+    }
+    .image {
+        width: 300px;
+    }
+    .ratings {
+        margin-left: 40px;
+    }
+    .rating {
+        margin-top: 70px;
+    }
+}
+  
+@media screen and (min-width: 652px) and (max-width: 693px) {
+    /* Movie.js */
+    .movie {
+      max-width: 50%;
+    }
+
+    /* MovieInfo.js */
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+    .poster {
+        max-width: 50%;
+    }
+    .image {
+        width: 300px;
+    }
+    .rating {
+        margin-top: 0%;
+    }
+}
+ 
+@media screen and (max-width: 651px) {
+    /* Movie.js */
+    .movie {
+      max-width: 100%;
+    }
+
+    /* MovieInfo.js */
+    .info {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+    .titcont, .poster {
+        max-width: 100%;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .year {
+        font-size: 35px;
+    }
+    .image {
+        width: 200px;
+    }
+    .ratings {
+        padding-top: 80px;
+        margin-left: 20px;;
+    }
+
+    .rating {
+        margin-top: 0%;
+    }
+}
